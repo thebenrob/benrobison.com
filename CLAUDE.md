@@ -16,6 +16,18 @@ bundle exec jekyll build       # build static site to _site/
 
 Stackbit's production build command is `bundle install && jekyll build` (publishes `_site/`).
 
+### Ruby version
+
+This project requires Ruby 4.0.3 (managed via rbenv — pinned in `.ruby-version`). The macOS system Ruby (`/usr/bin/ruby`, 2.6.x) is too old and the bundler it ships with is incompatible.
+
+**Claude Code sessions:** the non-interactive shell does not auto-load rbenv shims, so prefix any `bundle` / `gem` / `ruby` command with rbenv init, e.g.:
+
+```bash
+eval "$(rbenv init - zsh)" && bundle exec jekyll build
+```
+
+Without that prefix, commands fall through to the system Ruby and fail.
+
 There is no test suite, linter, or JS build step — assets in `assets/css`, `assets/js`, `assets/fonts` are checked in directly. SCSS in `_sass/` is compiled by Jekyll (configured in `_config.yml` under `sass:` — output style is `compressed`).
 
 ## Architecture

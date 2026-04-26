@@ -4,7 +4,23 @@
       "Bash(git restore *)",
       "Bash(git pull *)",
       "Bash(git worktree *)",
-      "Bash(git fetch *)"
+      "Bash(git fetch *)",
+      "Bash(ruby --version)",
+      "Bash(bundle --version)",
+      "Bash(gem list *)",
+      "Read(//opt/homebrew/opt/**)",
+      "Read(//opt/homebrew/Cellar/**)",
+      "Bash(rbenv versions *)",
+      "Bash(rbenv global *)",
+      "Bash(/opt/homebrew/opt/ruby/bin/ruby --version)",
+      "Bash(git status *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git commit *)",
+      "Bash(gh pr *)",
+      "Bash(gh repo *)",
+      "Bash(gh api *)"
     ]
   }
 }
