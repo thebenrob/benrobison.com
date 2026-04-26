@@ -15,7 +15,9 @@
       "Bash(/opt/homebrew/opt/ruby/bin/ruby --version)",
       "Bash(git status *)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(git push *)",
+      "Bash(git commit *)"
     ]
   }
 }
