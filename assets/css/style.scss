@@ -23,33 +23,31 @@
  10. Prism
 */
 
-// Font.
-$font: (
-  primary: ("Lato","Helvetica Neue",Helvetica,sans-serif),
-  secondary: ("Noto Serif",Georgia,serif)
-);
-
-// Palette.
 {% assign accent = site.accent_color | default: '#2d72d9' %}
-$palette: (
-  accent:    {{ accent }},
-  primary:   #6b747a,
-  secondary: #2c343c,
-  meta:      #9ba6ad,
-  border:    #d7d7d7,
-  bg:        #fbfbfb
+
+@use "functions" with (
+  $font: (
+    primary: ("Lato", "Helvetica Neue", Helvetica, sans-serif),
+    secondary: ("Noto Serif", Georgia, serif)
+  ),
+  $palette: (
+    accent:    {{ accent }},
+    primary:   #6b747a,
+    secondary: #2c343c,
+    meta:      #9ba6ad,
+    border:    #d7d7d7,
+    bg:        #fbfbfb
+  )
 );
 
-// Imports
-@import "functions";
-@import "icons";
-@import "reset";
-@import "general";
-@import "structure";
-@import "site-header";
-@import "content";
-@import "comments";
-@import "posts-navigation";
-@import "site-footer";
-@import "animations";
-@import "prism";
+@use "icons";
+@use "reset";
+@use "general";
+@use "structure";
+@use "site-header";
+@use "content";
+@use "comments";
+@use "posts-navigation";
+@use "site-footer";
+@use "animations";
+@use "prism";

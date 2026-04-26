@@ -1,3 +1,5 @@
+@use "functions" as *;
+
 /* ==========================================================================
    2. General
    ========================================================================== */
@@ -7,11 +9,11 @@ button,
 input,
 select,
 textarea {
-  font-family: _font(primary);
+  font-family: font(primary);
 }
 
 html {
-  // border: 15px solid _palette(accent);
+  // border: 15px solid palette(accent);
   box-sizing: border-box;
 
   @media only screen and (max-width: 600px) {
@@ -21,7 +23,7 @@ html {
 }
 
 body {
-  color: _palette(primary);
+  color: palette(primary);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   line-height: 1.66667;
@@ -30,12 +32,12 @@ body {
 }
 
 a {
-  color: _palette(accent);
+  color: palette(accent);
   text-decoration: none;
   -webkit-transition: color .3s ease;
   transition: color .3s ease;
   &:hover {
-    color: _palette(secondary);
+    color: palette(secondary);
     text-decoration: underline;
   }
 }
@@ -46,8 +48,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: _palette(secondary);
-  font-family: _font(secondary);
+  color: palette(secondary);
+  font-family: font(secondary);
   font-weight: bold;
   line-height: 1.2;
   margin: 2rem 0 1rem;
@@ -120,8 +122,8 @@ ins {
 }
 
 pre {
-  background: _palette(bg);
-  border: 1px solid _palette(border);
+  background: palette(bg);
+  border: 1px solid palette(border);
   border-radius: 3px;
   font-family: Consolas, "Andale Mono", "Courier New", Courier, monospace;
   font-size: 0.88889rem;
@@ -132,8 +134,8 @@ pre {
 }
 
 :not(pre) > code {
-  background: _palette(bg);
-  border: 1px solid _palette(border);
+  background: palette(bg);
+  border: 1px solid palette(border);
   border-radius: 3px;
   font-family: Consolas, "Andale Mono", "Courier New", Courier, monospace;
   font-size: 0.88889rem;
@@ -142,9 +144,9 @@ pre {
 }
 
 blockquote {
-  border-left: 3px solid _palette(secondary);
-  color: _palette(secondary);
-  font-family: _font(secondary);
+  border-left: 3px solid palette(secondary);
+  color: palette(secondary);
+  font-family: font(secondary);
   font-style: italic;
   margin: 0 0 1.66667em -30px;
   padding: 0 0 0 30px;
@@ -160,7 +162,7 @@ blockquote {
 
   small,
   cite {
-    color: _palette(primary);
+    color: palette(primary);
     display: inline-block;
     font-size: 0.88889em;
   }
@@ -190,14 +192,14 @@ li > ol {
 }
 
 hr {
-  background: _palette(border);
+  background: palette(border);
   border: 0;
   height: 1px;
   margin: 2.5em 0;
 }
 
 table {
-  border-bottom: 1px solid _palette(border);
+  border-bottom: 1px solid palette(border);
   line-height: 1.33333;
   margin: 0 0 1.66667em;
   text-align: left;
@@ -212,17 +214,17 @@ caption {
 
 th,
 td {
-  border-top: 1px solid _palette(border);
+  border-top: 1px solid palette(border);
   padding: 8px;
 }
 
 th {
-   color: _palette(secondary);
+   color: palette(secondary);
    font-weight: bold;
 }
 
 table tbody > tr:nth-child(odd) {
-  background: _palette(bg);
+  background: palette(bg);
 }
 
 img {
@@ -244,7 +246,7 @@ video {
 }
 
 .image-card figcaption {
-  color: _palette(meta);
+  color: palette(meta);
   font-size: 0.77778rem;
   padding-top: 0.5em;
   text-align: left;
@@ -297,13 +299,13 @@ video {
 /* Text selection */
 ::-moz-selection {
   background: #e4edfa;
-  color: _palette(secondary);
+  color: palette(secondary);
   text-shadow: none;
 }
 
 ::selection {
   background: #e4edfa;
-  color: _palette(secondary);
+  color: palette(secondary);
   text-shadow: none;
 }
 
@@ -312,10 +314,10 @@ video {
 #menu-close,
 .back-to-top {
 	background: 0;
-  border: 1px solid _palette(border);
+  border: 1px solid palette(border);
   border-radius: 3px;
   box-sizing: border-box;
-	color: _palette(primary);
+	color: palette(primary);
 	padding: 0;
 	position: relative;
 	height: 36px;
@@ -326,8 +328,8 @@ video {
   &:hover,
 	&:focus,
 	&:active {
-		border-color: _palette(accent);
-    color: _palette(accent);
+		border-color: palette(accent);
+    color: palette(accent);
 		outline: 0;
 	}
 }

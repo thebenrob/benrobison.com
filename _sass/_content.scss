@@ -1,9 +1,11 @@
+@use "functions" as *;
+
 /* ==========================================================================
    5. Content
    ========================================================================== */
 
 .post {
-  border-bottom: 1px solid _palette(border);
+  border-bottom: 1px solid palette(border);
   padding: 3.33333em 0 1.66667em;
 }
 
@@ -12,7 +14,7 @@
 }
 
 .post-date {
-  color: _palette(meta);
+  color: palette(meta);
   display: inline-block;
   font-size: 14px;
   font-weight: bold;
@@ -20,7 +22,7 @@
 }
 
 .post-meta {
-  font-family: _font(secondary);
+  font-family: font(secondary);
   font-size: 0.88889rem;
   font-style: italic;
   margin-bottom: 1.11111rem;
@@ -48,7 +50,7 @@
     color: inherit;
     text-decoration: none;
     &:hover {
-      color: _palette(accent);
+      color: palette(accent);
     }
   }
 }
@@ -59,7 +61,7 @@
 
 /* Author profile */
 .author-box {
-  border-top: 1px solid _palette(border);
+  border-top: 1px solid palette(border);
   padding-top: 1.66667em;
 
   .author-avatar {
@@ -90,9 +92,9 @@
 
   .author-location,
   .author-website {
-    color: _palette(meta);
+    color: palette(meta);
     display: inline-block;
-    font-family: _font(secondary);
+    font-family: font(secondary);
     font-size: 0.88889rem;
     font-style: italic;
     margin-bottom: 1rem;
@@ -116,15 +118,15 @@
 .post-share {
   padding: 1.66667em 0 3.33333em;
   span {
-    color: _palette(meta);
+    color: palette(meta);
     display: inline-block;
     font-size: 0.88889em;
     margin-right: 15px;
   }
   a {
-    border: 1px solid _palette(border);
+    border: 1px solid palette(border);
     border-radius: 3px;
-    color: _palette(primary);
+    color: palette(primary);
     display: inline-block;
     font-size: 14px;
     margin-bottom: 0.5em;
@@ -134,8 +136,8 @@
     -webkit-transition: .3s ease;
     transition: .3s ease;
     &:hover {
-      border-color: _palette(accent);
-      color: _palette(accent);
+      border-color: palette(accent);
+      color: palette(accent);
     }
   }
 }
@@ -152,7 +154,7 @@
 }
 
 .archive-top-link {
-  color: _palette(meta);
+  color: palette(meta);
   font-size: 0.88889em;
   margin-bottom: 1.25em;
 }
@@ -166,7 +168,7 @@
 }
 
 .archive-meta {
-  color: _palette(meta);
+  color: palette(meta);
   .archive-date {
     font-size: 14px;
     font-weight: bold;

@@ -1,9 +1,11 @@
+@use "functions" as *;
+
 /* ==========================================================================
    6. Comments
    ========================================================================== */
 
 .comments-area {
-  border-bottom: 1px solid _palette(border);
+  border-bottom: 1px solid palette(border);
   padding: 1.66667em 0 3.33333em;
 }
 

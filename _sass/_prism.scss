@@ -1,3 +1,5 @@
+@use "functions" as *;
+
 /* ==========================================================================
    10. PrismJS 1.17.1 
    https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+json+yaml
@@ -5,7 +7,7 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-  color: _palette(secondary);
+  color: palette(secondary);
   background: none;
   font-family: Consolas, "Andale Mono", "Courier New", Courier, monospace;
   font-size: 0.88889rem;
@@ -42,7 +44,7 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: _palette(bg);
+  background: palette(bg);
 }
 
 /* Inline code */

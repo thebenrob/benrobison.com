@@ -1,3 +1,5 @@
+@use "functions" as *;
+
 /* ==========================================================================
    8. Site Footer
    ========================================================================== */
@@ -9,13 +11,13 @@
 .offsite-links {
   margin-bottom: 1.11111em;
   a {
-    color: _palette(primary);
+    color: palette(primary);
     display: inline-block;
     font-size: 18px;
     margin-right: 15px;
     text-decoration: none;
     &:hover{
-      color: _palette(accent);
+      color: palette(accent);
     }
   }
 }
